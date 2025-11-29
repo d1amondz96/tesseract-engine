@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
     <!-- --- EMBED / SOCIAL METADATA --- -->
-    <!-- Primary Meta Tags -->
     <title>the sigmaract v3</title>
     <meta name="title" content="the sigmaract v3">
     <meta name="description" content="the best skibidi-mind powered 4d sigmaract sim hahaha">
 
     <!-- Open Graph / Facebook / Discord -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tesseract-engine.vercel.app/"> <!-- Replace with your actual Vercel URL after deploy -->
+    <meta property="og:url" content="https://tesseract-engine.vercel.app/"> 
     <meta property="og:title" content="the sigmaract v3">
     <meta property="og:description" content="the best skibidi-mind powered 4d sigmaract sim hahaha">
     <meta property="og:image" content="favicon.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary">
-    <meta property="twitter:url" content="https://tesseract-engine.vercel.app/"> <!-- Replace with your actual Vercel URL -->
+    <meta property="twitter:url" content="https://tesseract-engine.vercel.app/">
     <meta property="twitter:title" content="the sigmaract v3">
     <meta property="twitter:description" content="the best skibidi-mind powered 4d sigmaract sim hahaha">
     <meta property="twitter:image" content="favicon.png">
@@ -212,6 +211,9 @@
         import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
 
         lucide.createIcons();
+
+        // --- API KEY SECURITY DECODING ---
+        // This takes your Base64 string and converts it back to the real key at runtime.
         const apiKey = atob("QUl6YVN5QnR1a2Z2bEhOX3VCZzIxbUJXMmRCR3BLMHNTcGstODlV");
 
         /* --- STATE --- */
@@ -525,7 +527,7 @@
             } catch (error) {
                 console.error(error);
                 loadingAI.classList.add('hidden');
-                addMessage('system', "quota exceeded nigger just wait A LITTLE BITT damn dramatic ass");
+                addMessage('system', "Error connecting to Neural Link. Please try again.");
             }
         }
 
@@ -537,5 +539,3 @@
     </script>
 </body>
 </html>
-
-
